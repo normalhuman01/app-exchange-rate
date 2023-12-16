@@ -1,0 +1,8 @@
+version: "3.8"
+services:
+  app:
+    build: .
+    image: challenge/app-exchange-rate
+    container_name: app-exchange-rate
+    ports:
+      - "${APP_PORT:-8080}:${APP_PORT_CONTAINER:-8080}"
